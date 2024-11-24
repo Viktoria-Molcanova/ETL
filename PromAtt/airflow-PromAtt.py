@@ -5,9 +5,9 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 def load_data():
-    booking_df = pd.read_csv('untitled1/booking.csv')
-    client_df = pd.read_csv('untitled1/client.csv')
-    hotel_df = pd.read_csv('untitled1/hotel.csv')
+    booking_df = pd.read_csv('booking.csv')
+    client_df = pd.read_csv('client.csv')
+    hotel_df = pd.read_csv('hotel.csv')
     return booking_df, client_df, hotel_df
 
 def transform_data(**kwargs):
